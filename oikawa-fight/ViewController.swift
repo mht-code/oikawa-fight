@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //カラ館なう。
+    //カラ館なう。 なう。
 
     override func viewDidLoad() {
         super.viewDidLoad()
