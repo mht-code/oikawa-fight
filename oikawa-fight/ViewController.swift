@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //カラ館なう。 なう。
+    //アイスティー
 
     override func viewDidLoad() {
         super.viewDidLoad()
