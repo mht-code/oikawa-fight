@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="oikawa_fight" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="cOg-KT-jrk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptystate-1" translatesAutoresizingMaskIntoConstraints="NO" id="9XU-Q2-MRA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9XU-Q2-MRA" secondAttribute="height" multiplier="375:667" id="CcA-Ke-iOM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-9j-pM4">
+                                <rect key="frame" x="92" y="496" width="191" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bl9-9j-pM4" secondAttribute="height" multiplier="191:73" id="Y5K-hs-qOC"/>
+                                </constraints>
+                                <state key="normal" image="button"/>
+                                <connections>
+                                    <action selector="checkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvN-VG-iJ6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-V5-8hg">
+                                <rect key="frame" x="166" y="498" width="160" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9XU-Q2-MRA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="02N-tr-MIc"/>
+                            <constraint firstItem="Bl9-9j-pM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CLa-U4-XOq"/>
+                            <constraint firstItem="Bl9-9j-pM4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="496" id="Cym-1Y-qIr"/>
+                            <constraint firstAttribute="trailing" secondItem="9XU-Q2-MRA" secondAttribute="trailing" id="Mr2-Fy-RBM"/>
+                            <constraint firstItem="9XU-Q2-MRA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Who-jT-skF"/>
+                            <constraint firstAttribute="trailing" secondItem="Bl9-9j-pM4" secondAttribute="trailing" constant="92" id="cx6-eb-Qtb"/>
+                            <constraint firstItem="Bl9-9j-pM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="92" id="vsD-Jd-bpr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkButton" destination="Bl9-9j-pM4" id="nvI-5d-98E"/>
+                        <outlet property="tempLabel" destination="dRa-V5-8hg" id="o2q-Ty-4E5"/>
+                        <outlet property="weatherImage" destination="9XU-Q2-MRA" id="pzS-W8-CPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="215.19999999999999" y="152.47376311844079"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button" width="584" height="182"/>
+        <image name="emptystate-1" width="1077" height="1915"/>
+        <image name="sunny" width="1077" height="1915"/>
+    </resources>
 </document>
