@@ -12,6 +12,7 @@
 		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
 		CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A71E4DB75F0053C8FC /* Assets.xcassets */; };
 		CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */; };
+		CA4ED0841E7D449C004E4F4D /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4ED0831E7D449C004E4F4D /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CA4311A71E4DB75F0053C8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4311AA1E4DB75F0053C8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4311AC1E4DB75F0053C8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4ED0831E7D449C004E4F4D /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CA4311A71E4DB75F0053C8FC /* Assets.xcassets */,
 				CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */,
 				CA4311AC1E4DB75F0053C8FC /* Info.plist */,
+				CA4ED0831E7D449C004E4F4D /* NextViewController.swift */,
 			);
 			path = "oikawa-fight";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4ED0841E7D449C004E4F4D /* NextViewController.swift in Sources */,
 				CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */,
 				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +301,7 @@
 				CA4311B11E4DB75F0053C8FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
