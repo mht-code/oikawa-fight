@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="uti-nq-tGf">
             <objects>
-                <viewController id="8DA-OE-9Xo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="next" id="8DA-OE-9Xo" customClass="ViewController2" customModule="oikawa_fight" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lzn-Tq-6H4"/>
                         <viewControllerLayoutGuide type="bottom" id="4mc-E2-OgW"/>
