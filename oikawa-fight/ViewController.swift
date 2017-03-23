@@ -49,6 +49,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             namelabel.text = "剛"
         } else if nametext.text == "香取"{
             namelabel.text = "慎吾"
+        } else {
+            namelabel.text = "森くん？"
         }
     }
 }
