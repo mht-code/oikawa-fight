@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0BC1D51F616487003A7235 /* iconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BC1D31F616487003A7235 /* iconCell.swift */; };
+		CA0BC1D61F616487003A7235 /* iconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0BC1D41F616487003A7235 /* iconCell.xib */; };
 		CADC908F1F61339200C050DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90801F61339200C050DB /* AppDelegate.swift */; };
 		CADC90901F61339200C050DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADC90811F61339200C050DB /* Assets.xcassets */; };
 		CADC90911F61339200C050DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADC90821F61339200C050DB /* LaunchScreen.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA0BC1D31F616487003A7235 /* iconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconCell.swift; sourceTree = "<group>"; };
+		CA0BC1D41F616487003A7235 /* iconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iconCell.xib; sourceTree = "<group>"; };
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADC90801F61339200C050DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CADC90811F61339200C050DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,8 +70,8 @@
 				CADC90801F61339200C050DB /* AppDelegate.swift */,
 				CADC90811F61339200C050DB /* Assets.xcassets */,
 				CADC90821F61339200C050DB /* LaunchScreen.storyboard */,
-				CADC90841F61339200C050DB /* Cell */,
 				CADC90871F61339200C050DB /* Info.plist */,
+				CADC90841F61339200C050DB /* Cell */,
 				CADC90881F61339200C050DB /* storyboard */,
 				CADC908A1F61339200C050DB /* View */,
 				CADC908D1F61339200C050DB /* viewController */,
@@ -80,6 +84,8 @@
 			children = (
 				CADC90851F61339200C050DB /* topCell.swift */,
 				CADC90861F61339200C050DB /* topCell.xib */,
+				CA0BC1D31F616487003A7235 /* iconCell.swift */,
+				CA0BC1D41F616487003A7235 /* iconCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 				CADC90951F61339200C050DB /* Main.storyboard in Resources */,
 				CADC90931F61339200C050DB /* topCell.xib in Resources */,
 				CADC90901F61339200C050DB /* Assets.xcassets in Resources */,
+				CA0BC1D61F616487003A7235 /* iconCell.xib in Resources */,
 				CADC90911F61339200C050DB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +194,7 @@
 			files = (
 				CADC90961F61339200C050DB /* iconView.swift in Sources */,
 				CADC908F1F61339200C050DB /* AppDelegate.swift in Sources */,
+				CA0BC1D51F616487003A7235 /* iconCell.swift in Sources */,
 				CADC90981F61339200C050DB /* ViewController.swift in Sources */,
 				CADC90921F61339200C050DB /* topCell.swift in Sources */,
 			);
