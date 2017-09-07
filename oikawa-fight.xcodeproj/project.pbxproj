@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */; };
-		CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A21E4DB75F0053C8FC /* ViewController.swift */; };
-		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
-		CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A71E4DB75F0053C8FC /* Assets.xcassets */; };
-		CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */; };
-		CAAE7B191F5C1D8200C7CD7B /* topCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE7B171F5C1D8200C7CD7B /* topCell.swift */; };
-		CAAE7B1A1F5C1D8200C7CD7B /* topCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE7B181F5C1D8200C7CD7B /* topCell.xib */; };
-		CADC90631F60F42400C050DB /* iconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADC90621F60F42400C050DB /* iconView.xib */; };
-		CADC90651F60F44900C050DB /* iconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90641F60F44900C050DB /* iconView.swift */; };
+		CADC90751F61319A00C050DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90671F61319A00C050DB /* AppDelegate.swift */; };
+		CADC90761F61319A00C050DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADC90681F61319A00C050DB /* Assets.xcassets */; };
+		CADC90771F61319A00C050DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADC90691F61319A00C050DB /* LaunchScreen.storyboard */; };
+		CADC90781F61319A00C050DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADC906B1F61319A00C050DB /* Main.storyboard */; };
+		CADC90791F61319A00C050DB /* topCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC906E1F61319A00C050DB /* topCell.swift */; };
+		CADC907A1F61319A00C050DB /* topCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADC906F1F61319A00C050DB /* topCell.xib */; };
+		CADC907B1F61319A00C050DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CADC90701F61319A00C050DB /* Info.plist */; };
+		CADC907C1F61319A00C050DB /* iconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90721F61319A00C050DB /* iconView.swift */; };
+		CADC907D1F61319A00C050DB /* iconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADC90731F61319A00C050DB /* iconView.xib */; };
+		CADC907E1F61319A00C050DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90741F61319A00C050DB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA4311A21E4DB75F0053C8FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA4311A51E4DB75F0053C8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA4311A71E4DB75F0053C8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA4311AA1E4DB75F0053C8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA4311AC1E4DB75F0053C8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAAE7B171F5C1D8200C7CD7B /* topCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topCell.swift; sourceTree = "<group>"; };
-		CAAE7B181F5C1D8200C7CD7B /* topCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topCell.xib; sourceTree = "<group>"; };
-		CADC90621F60F42400C050DB /* iconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iconView.xib; sourceTree = "<group>"; };
-		CADC90641F60F44900C050DB /* iconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconView.swift; sourceTree = "<group>"; };
+		CADC90671F61319A00C050DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CADC90681F61319A00C050DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CADC906A1F61319A00C050DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CADC906C1F61319A00C050DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CADC906E1F61319A00C050DB /* topCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topCell.swift; sourceTree = "<group>"; };
+		CADC906F1F61319A00C050DB /* topCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topCell.xib; sourceTree = "<group>"; };
+		CADC90701F61319A00C050DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADC90721F61319A00C050DB /* iconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconView.swift; sourceTree = "<group>"; };
+		CADC90731F61319A00C050DB /* iconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iconView.xib; sourceTree = "<group>"; };
+		CADC90741F61319A00C050DB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +47,7 @@
 		CA4311941E4DB75F0053C8FC = {
 			isa = PBXGroup;
 			children = (
-				CA43119F1E4DB75F0053C8FC /* oikawa-fight */,
+				CADC90661F61319A00C050DB /* oikawa-fight */,
 				CA43119E1E4DB75F0053C8FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,21 +60,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA43119F1E4DB75F0053C8FC /* oikawa-fight */ = {
+		CADC90661F61319A00C050DB /* oikawa-fight */ = {
 			isa = PBXGroup;
 			children = (
-				CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */,
-				CA4311A21E4DB75F0053C8FC /* ViewController.swift */,
-				CA4311A41E4DB75F0053C8FC /* Main.storyboard */,
-				CA4311A71E4DB75F0053C8FC /* Assets.xcassets */,
-				CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */,
-				CA4311AC1E4DB75F0053C8FC /* Info.plist */,
-				CAAE7B171F5C1D8200C7CD7B /* topCell.swift */,
-				CAAE7B181F5C1D8200C7CD7B /* topCell.xib */,
-				CADC90621F60F42400C050DB /* iconView.xib */,
-				CADC90641F60F44900C050DB /* iconView.swift */,
+				CADC90671F61319A00C050DB /* AppDelegate.swift */,
+				CADC90681F61319A00C050DB /* Assets.xcassets */,
+				CADC90691F61319A00C050DB /* LaunchScreen.storyboard */,
+				CADC906B1F61319A00C050DB /* Main.storyboard */,
+				CADC906D1F61319A00C050DB /* Cell */,
+				CADC90701F61319A00C050DB /* Info.plist */,
+				CADC90711F61319A00C050DB /* View */,
+				CADC90741F61319A00C050DB /* ViewController.swift */,
 			);
 			path = "oikawa-fight";
+			sourceTree = "<group>";
+		};
+		CADC906D1F61319A00C050DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CADC906E1F61319A00C050DB /* topCell.swift */,
+				CADC906F1F61319A00C050DB /* topCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CADC90711F61319A00C050DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CADC90721F61319A00C050DB /* iconView.swift */,
+				CADC90731F61319A00C050DB /* iconView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,11 +153,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */,
-				CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */,
-				CADC90631F60F42400C050DB /* iconView.xib in Resources */,
-				CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */,
-				CAAE7B1A1F5C1D8200C7CD7B /* topCell.xib in Resources */,
+				CADC90781F61319A00C050DB /* Main.storyboard in Resources */,
+				CADC907D1F61319A00C050DB /* iconView.xib in Resources */,
+				CADC90761F61319A00C050DB /* Assets.xcassets in Resources */,
+				CADC90771F61319A00C050DB /* LaunchScreen.storyboard in Resources */,
+				CADC907B1F61319A00C050DB /* Info.plist in Resources */,
+				CADC907A1F61319A00C050DB /* topCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,30 +169,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAAE7B191F5C1D8200C7CD7B /* topCell.swift in Sources */,
-				CADC90651F60F44900C050DB /* iconView.swift in Sources */,
-				CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */,
-				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
+				CADC907C1F61319A00C050DB /* iconView.swift in Sources */,
+				CADC90751F61319A00C050DB /* AppDelegate.swift in Sources */,
+				CADC907E1F61319A00C050DB /* ViewController.swift in Sources */,
+				CADC90791F61319A00C050DB /* topCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA4311A41E4DB75F0053C8FC /* Main.storyboard */ = {
+		CADC90691F61319A00C050DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA4311A51E4DB75F0053C8FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA4311AA1E4DB75F0053C8FC /* Base */,
+				CADC906A1F61319A00C050DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CADC906B1F61319A00C050DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADC906C1F61319A00C050DB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
