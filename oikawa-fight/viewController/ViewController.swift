@@ -18,24 +18,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
 
         // カスタムセルの登録
-        let nib = UINib(nibName: "topCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "topCell")
+        let topCell = UINib(nibName: "topCell", bundle: nil)
+        tableView.register(topCell, forCellReuseIdentifier: "topCell")
         
+        let iconCell = UINib(nibName: "iconCell", bundle: nil)
+        tableView.register(iconCell, forCellReuseIdentifier: "iconCell")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: topCell = tableView.dequeueReusableCell(withIdentifier: "topCell") as! topCell
-        return cell
+        switch indexPath.row {
+        case 0:
+            let cell: topCell = tableView.dequeueReusableCell(withIdentifier: "topCell") as! topCell
+            return cell
+        default:
+            let cell: iconCell = tableView.dequeueReusableCell(withIdentifier: "iconCell") as! iconCell
+            return cell
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
