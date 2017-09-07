@@ -21,6 +21,7 @@ class iconCell: UITableViewCell {
         
         let xibView: UIView = iconView(frame: CGRect(x: 0, y: 0, width: 300, height: 200))
         view.addSubview(xibView)
+        // このクラスは、キービューに対してキー値コーディングに準拠していません。
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
