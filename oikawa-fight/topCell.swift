@@ -17,7 +17,7 @@ class topCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        let size = CGSize(width: scrollView.frame.size.width, height: 200)
+        let size = CGSize(width: scrollView.frame.size.width, height: 150)
         
         let contentRect = CGRect(x: 0, y: 0, width: size.width * 4, height: size.height)
         let contentView = UIView(frame: contentRect)
