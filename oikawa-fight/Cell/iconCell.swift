@@ -13,23 +13,24 @@ class iconCell: UITableViewCell {
     
     @IBOutlet weak var view: UIView!
     
+    let colors: [UIColor] = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow]
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        let xibView: UIView = iconView(frame: CGRect(x: 0, y: 0, width: 300, height: 200))
-//        view.addSubview(xibView)
         
-        let size = CGSize(width: 50, height: 50)
+        let size = CGSize(width: 80, height: 80)
         
         let contentRect = CGRect(x: 0, y: 0, width: size.width * 4, height: size.height)
         let contentView = UIView(frame: contentRect)
         
-        let subContentView: UIView = iconView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let subContentView: UIView = iconView(frame: CGRect(x: 116, y: 0, width: size.width, height: size.height))
         subContentView.backgroundColor = .green
         contentView.addSubview(subContentView)
         // このクラスは、キービューに対してキー値コーディングに準拠していません。
         view.addSubview(contentView)
+        
     
     }
 

@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         default:
             let cell: iconCell = tableView.dequeueReusableCell(withIdentifier: "iconCell") as! iconCell
+            
             return cell
             
         }

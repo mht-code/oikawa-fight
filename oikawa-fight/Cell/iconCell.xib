@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,12 +19,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="397" height="157.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-AM-9In">
-                        <rect key="frame" x="24" y="24" width="113" height="108"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-AM-9In">
+                        <rect key="frame" x="24" y="39" width="80" height="80"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="0MP-mf-rYW"/>
+                            <constraint firstAttribute="width" constant="80" id="GNr-Kp-MiQ"/>
+                        </constraints>
                     </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="hc6-AM-9In" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SvJ-Gf-uy8"/>
+                    <constraint firstItem="hc6-AM-9In" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="XTN-2U-LUb"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="view" destination="hc6-AM-9In" id="af5-qW-NJm"/>
