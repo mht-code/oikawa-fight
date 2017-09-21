@@ -30,8 +30,10 @@ class IconCell: UITableViewCell {
     func viewGeneration() {
         for addView in 1 ... colors.count {
             let size = CGSize(width: 80, height: 80)
+            let point = CGPoint(x: 116, y: 0)
             
-            let contentRect = CGRect(x: 0, y: 0, width: size.width * 4, height: size.height)
+            
+            let contentRect = CGRect(x: point.x * 2, y: point.y, width: size.width * 4, height: size.height)
             let contentView = UIView(frame: contentRect)
             
             let subContentView: UIView = iconView(frame: CGRect(x: 116, y: 0, width: size.width, height: size.height))
@@ -39,24 +41,11 @@ class IconCell: UITableViewCell {
             contentView.addSubview(subContentView)
             // このクラスは、キービューに対してキー値コーディングに準拠していません。
             view.addSubview(contentView)
-            colorsView()
+            
             print(addView)
             
         }
     }
     
-    func colorsView() {
-        let size = CGSize(width: 80, height: 80)
-        
-        let contentRect = CGRect(x: 0, y: 0, width: size.width * 4, height: size.height)
-        let contentView = UIView(frame: contentRect)
-        
-        let subContentView: UIView = iconView(frame: CGRect(x: 116, y: 0, width: size.width, height: size.height))
-        subContentView.backgroundColor = .green
-        contentView.addSubview(subContentView)
-        // このクラスは、キービューに対してキー値コーディングに準拠していません。
-        view.addSubview(contentView)
-        
-        
-    }
+
 }
