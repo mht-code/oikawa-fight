@@ -1,5 +1,5 @@
 //
-//  topCell.swift
+//  TopCell.swift
 //  oikawa-fight
 //
 //  Created by 及川ひな on 2017/09/03.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class topCell: UITableViewCell {
+class TopCell: UITableViewCell {
     
     
     @IBOutlet weak var scrollView: UIScrollView!

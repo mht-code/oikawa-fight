@@ -1,5 +1,5 @@
 //
-//  iconView.swift
+//  IconView.swift
 //  oikawa-fight
 //
 //  Created by 及川ひな on 2017/09/07.

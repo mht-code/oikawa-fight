@@ -1,5 +1,5 @@
 //
-//  iconCell.swift
+//  IconCell.swift
 //  oikawa-fight
 //
 //  Created by 及川ひな on 2017/09/07.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class iconCell: UITableViewCell {
+class IconCell: UITableViewCell {
     
     
     @IBOutlet weak var view: UIView!

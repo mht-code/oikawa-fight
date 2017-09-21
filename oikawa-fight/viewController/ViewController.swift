@@ -18,11 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
 
         // カスタムセルの登録
-        let topCell = UINib(nibName: "topCell", bundle: nil)
-        tableView.register(topCell, forCellReuseIdentifier: "topCell")
+        let topCell = UINib(nibName: "TopCell", bundle: nil)
+        tableView.register(topCell, forCellReuseIdentifier: "TopCell")
         
-        let iconCell = UINib(nibName: "iconCell", bundle: nil)
-        tableView.register(iconCell, forCellReuseIdentifier: "iconCell")
+        let iconCell = UINib(nibName: "IconCell", bundle: nil)
+        tableView.register(iconCell, forCellReuseIdentifier: "IconCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,10 +37,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell: topCell = tableView.dequeueReusableCell(withIdentifier: "topCell") as! topCell
+            let cell: TopCell = tableView.dequeueReusableCell(withIdentifier: "TopCell") as! TopCell
             return cell
         default:
-            let cell: iconCell = tableView.dequeueReusableCell(withIdentifier: "iconCell") as! iconCell
+            let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
             
             return cell
             
