@@ -11,14 +11,16 @@ import UIKit
 class IconCell: UITableViewCell {
     
     
-    @IBOutlet weak var view: UIView!
+//    @IBOutlet weak var view: UIView!
     
     let colors: [UIColor] = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow]
 
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewGeneration()
+//        viewGeneration()
+        test()
+        
     }
     
 
@@ -27,22 +29,56 @@ class IconCell: UITableViewCell {
 
     }
     
+    func test() {
+        for i in colors { colors.index
+            let margin = 15
+            let size = 115
+            
+            let x = margin + size
+            
+            
+            let testView = UIView.init(frame: CGRect.init(x: 15, y: 15, width: 100, height: 100))
+            let blue = UIColor.blue
+            testView.backgroundColor = blue
+            self.contentView.addSubview(testView)
+            
+            
+            
+//            let secondView = UIView.init(frame: CGRect.init(x: x, y: 15, width: 100, height: 100))
+//            let green = UIColor.green
+//            secondView.backgroundColor = green
+//            self.contentView.addSubview(secondView)
+//            
+//            
+//            let thirdView = UIView.init(frame: CGRect.init(x: 0, y: 15, width: 100, height: 100))
+//            let red = UIColor.red
+//            thirdView.backgroundColor = red
+//            self.contentView.addSubview(thirdView)
+//            
+            
+            print(i)
+        }
+        
+
+        
+    }
+    
+    
     func viewGeneration() {
         for addView in 1 ... colors.count {
-            let size = CGSize(width: 80, height: 80)
-            let point = CGPoint(x: 116, y: 0)
             
+            let margin = 15
+            let size = 115
             
-            let contentRect = CGRect(x: point.x * 2, y: point.y, width: size.width * 4, height: size.height)
-            let contentView = UIView(frame: contentRect)
+            let x = margin + size
             
-            let subContentView: UIView = iconView(frame: CGRect(x: 116, y: 0, width: size.width, height: size.height))
-            subContentView.backgroundColor = .green
-            contentView.addSubview(subContentView)
-            // このクラスは、キービューに対してキー値コーディングに準拠していません。
-            view.addSubview(contentView)
+            let testView = UIView.init(frame: CGRect.init(x: 15, y: 15, width: 100, height: 100))
+            let blue = UIColor.blue
+            testView.backgroundColor = blue
+            self.contentView.addSubview(testView)
             
             print(addView)
+            print(x)
             
         }
     }
