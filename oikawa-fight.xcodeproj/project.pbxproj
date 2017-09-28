@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA0BC1D51F616487003A7235 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BC1D31F616487003A7235 /* IconCell.swift */; };
 		CA0BC1D61F616487003A7235 /* IconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0BC1D41F616487003A7235 /* IconCell.xib */; };
+		CA77C0401F7CE276001B9CBD /* RectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77C03E1F7CE276001B9CBD /* RectangleCell.swift */; };
+		CA77C0411F7CE276001B9CBD /* RectangleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA77C03F1F7CE276001B9CBD /* RectangleCell.xib */; };
 		CADC908F1F61339200C050DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC90801F61339200C050DB /* AppDelegate.swift */; };
 		CADC90901F61339200C050DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADC90811F61339200C050DB /* Assets.xcassets */; };
 		CADC90911F61339200C050DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADC90821F61339200C050DB /* LaunchScreen.storyboard */; };
@@ -25,6 +27,8 @@
 		CA0BC1D31F616487003A7235 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		CA0BC1D41F616487003A7235 /* IconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconCell.xib; sourceTree = "<group>"; };
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA77C03E1F7CE276001B9CBD /* RectangleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleCell.swift; sourceTree = "<group>"; };
+		CA77C03F1F7CE276001B9CBD /* RectangleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RectangleCell.xib; sourceTree = "<group>"; };
 		CADC90801F61339200C050DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CADC90811F61339200C050DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CADC90831F61339200C050DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				CADC90861F61339200C050DB /* TopCell.xib */,
 				CA0BC1D31F616487003A7235 /* IconCell.swift */,
 				CA0BC1D41F616487003A7235 /* IconCell.xib */,
+				CA77C03E1F7CE276001B9CBD /* RectangleCell.swift */,
+				CA77C03F1F7CE276001B9CBD /* RectangleCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				CADC90901F61339200C050DB /* Assets.xcassets in Resources */,
 				CA0BC1D61F616487003A7235 /* IconCell.xib in Resources */,
 				CADC90911F61339200C050DB /* LaunchScreen.storyboard in Resources */,
+				CA77C0411F7CE276001B9CBD /* RectangleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 				CA0BC1D51F616487003A7235 /* IconCell.swift in Sources */,
 				CADC90981F61339200C050DB /* ViewController.swift in Sources */,
 				CADC90921F61339200C050DB /* TopCell.swift in Sources */,
+				CA77C0401F7CE276001B9CBD /* RectangleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

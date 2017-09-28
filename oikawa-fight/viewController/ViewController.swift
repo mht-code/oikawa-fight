@@ -23,6 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let iconCell = UINib(nibName: "IconCell", bundle: nil)
         tableView.register(iconCell, forCellReuseIdentifier: "IconCell")
+        
+        let rectangleCell = UINib(nibName: "RectangleCell", bundle: nil)
+        tableView.register(rectangleCell, forCellReuseIdentifier: "RectangleCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 22
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,10 +42,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 0:
             let cell: TopCell = tableView.dequeueReusableCell(withIdentifier: "TopCell") as! TopCell
             return cell
+            
+        case 1, 2, 3:
+            let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
+            return cell
+            
+        case 4:
+            let cell: RectangleCell = tableView.dequeueReusableCell(withIdentifier: "RectangleCell") as! RectangleCell
+            return cell
+
+        case 5:
+            let cell: RectangleCell = tableView.dequeueReusableCell(withIdentifier: "RectangleCell") as! RectangleCell
+            return cell
+            
         default:
             let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
-            
             return cell
+            
             
         }
     }
