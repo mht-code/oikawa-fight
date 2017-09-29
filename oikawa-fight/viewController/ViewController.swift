@@ -26,6 +26,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let rectangleCell = UINib(nibName: "RectangleCell", bundle: nil)
         tableView.register(rectangleCell, forCellReuseIdentifier: "RectangleCell")
+        
+        let defaultCell = UINib(nibName: "DefaultCell", bundle: nil)
+        tableView.register(defaultCell, forCellReuseIdentifier: "DefaultCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,17 +46,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell: TopCell = tableView.dequeueReusableCell(withIdentifier: "TopCell") as! TopCell
             return cell
             
-        case 1, 2, 3:
+        case 1, 2, 3, 5, 6, 9, 10, 12, 13:
             let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
             return cell
             
-        case 4:
+        case 4, 7, 8, 11:
             let cell: RectangleCell = tableView.dequeueReusableCell(withIdentifier: "RectangleCell") as! RectangleCell
             return cell
-
-        case 5:
-            let cell: RectangleCell = tableView.dequeueReusableCell(withIdentifier: "RectangleCell") as! RectangleCell
+            
+        case 14:
+            let cell: DefaultCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell") as! DefaultCell
             return cell
+            
             
         default:
             let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
