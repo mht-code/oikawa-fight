@@ -15,13 +15,16 @@ class ButtonCell: UITableViewCell {
     let buttonTexts: [String] = [
         "パーソナライズ",
         "App Store for Apple Watch",
-        ""]
+        "Apple App",
+        "App 内課金について",
+        "保護者向け iTunes ガイド",
+        "防災関連アプリケーション"
+    ]
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        
+
         
     }
 
@@ -30,5 +33,16 @@ class ButtonCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func initButtonText(){
+        buttonTexts.enumerated().forEach() { index, text in
+            button.setTitle(text, for: UIControlState.normal)
+            
+            print(text)
+            
+        }
+    }
+
+    
+
     
 }

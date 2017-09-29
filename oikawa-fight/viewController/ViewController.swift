@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
+
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let defaultCell = UINib(nibName: "DefaultCell", bundle: nil)
         tableView.register(defaultCell, forCellReuseIdentifier: "DefaultCell")
+    
+        let buttonCell = UINib(nibName: "ButtonCell", bundle: nil)
+        tableView.register(buttonCell, forCellReuseIdentifier: "ButtonCell")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +65,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell: DefaultCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell") as! DefaultCell
             return cell
             
+        case 15, 16, 17, 18, 19, 20:
+            let cell: ButtonCell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! ButtonCell
+            
+            cell.initButtonText()
+//            cell.button.setTitle("", for: UIControlState.normal)
+            return cell
             
         default:
             let cell: IconCell = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
@@ -70,7 +83,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-
+    
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 0
+//    }
+//    
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 0
+//    }
+    
 
 }
 
