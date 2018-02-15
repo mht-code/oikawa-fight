@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 太一さんと一緒に勉強をしたソースコード
 class ViewController: UIViewController {
     
     var strings: [String] = ["ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし","ずし"]
