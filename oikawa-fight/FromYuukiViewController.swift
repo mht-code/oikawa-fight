@@ -17,18 +17,31 @@ class FromYuukiViewController: UIViewController {
                        Person(name: "石垣", age: 24, hoby: "ボルダリング"),
                        Person(name: "行木", age: 29, hoby: "ランニング"),]
         
-        var names = getNames(persons: persons)
+        var names: [String] = getNames(persons: persons)
+        var plusFiveAgePersons: [Person] = getPersons(persons: persons)
     }
-
-
+    
     struct Person {
         var name: String
         var age: Int
         var hoby: String
     }
     
+    // 演習問題1の回答
     func getNames(persons: [Person]) -> [String] {
         
-        return ???
+        let names = persons.map { person in
+            person.name
+        }
+        return names
+    }
+    
+    // 演習問題2の回答
+    func getPersons(persons: [Person]) -> [Person] {
+        
+        let plusFiveAgePersons = persons.map { person in
+            Person(name: person.name, age: person.age + 5, hoby: person.hoby)
+        }
+        return plusFiveAgePersons
     }
 }
