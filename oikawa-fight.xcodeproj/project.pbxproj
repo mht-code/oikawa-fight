@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		953651712036F4D600C4604D /* FromYuukiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651702036F4D600C4604D /* FromYuukiViewController.swift */; };
 		CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */; };
 		CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A21E4DB75F0053C8FC /* ViewController.swift */; };
 		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		953651702036F4D600C4604D /* FromYuukiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromYuukiViewController.swift; sourceTree = "<group>"; };
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA4311A21E4DB75F0053C8FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CAB1909020348B4900534D74 /* BusinessModel.swift */,
 				CAB1909220348C5700534D74 /* Item.swift */,
 				CAB190982035D7F100534D74 /* ReViewController.swift */,
+				953651702036F4D600C4604D /* FromYuukiViewController.swift */,
 			);
 			path = "oikawa-fight";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				CAB1909320348C5700534D74 /* Item.swift in Sources */,
 				CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */,
+				953651712036F4D600C4604D /* FromYuukiViewController.swift in Sources */,
 				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
 				CAB190992035D7F100534D74 /* ReViewController.swift in Sources */,
 				CAB1909120348B4900534D74 /* BusinessModel.swift in Sources */,
