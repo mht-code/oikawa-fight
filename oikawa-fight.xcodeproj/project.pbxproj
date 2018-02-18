@@ -16,6 +16,7 @@
 		CAB1909D203606B600534D74 /* CommonInitialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1909C203606B600534D74 /* CommonInitialize.swift */; };
 		CAB1909F2036073000534D74 /* StructInitilaizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1909E2036073000534D74 /* StructInitilaizer.swift */; };
 		CAB190A12036096D00534D74 /* EnumInitilaizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB190A02036096D00534D74 /* EnumInitilaizer.swift */; };
+		CAB190A32039971400534D74 /* ClassInitilaizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB190A22039971400534D74 /* ClassInitilaizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CAB1909C203606B600534D74 /* CommonInitialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInitialize.swift; sourceTree = "<group>"; };
 		CAB1909E2036073000534D74 /* StructInitilaizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructInitilaizer.swift; sourceTree = "<group>"; };
 		CAB190A02036096D00534D74 /* EnumInitilaizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumInitilaizer.swift; sourceTree = "<group>"; };
+		CAB190A22039971400534D74 /* ClassInitilaizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInitilaizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CAB1909C203606B600534D74 /* CommonInitialize.swift */,
 				CAB1909E2036073000534D74 /* StructInitilaizer.swift */,
 				CAB190A02036096D00534D74 /* EnumInitilaizer.swift */,
+				CAB190A22039971400534D74 /* ClassInitilaizer.swift */,
 			);
 			path = "oikawa-fight";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				CAB1909B2036066A00534D74 /* InitializeDetail.swift in Sources */,
 				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
 				CAB1909F2036073000534D74 /* StructInitilaizer.swift in Sources */,
+				CAB190A32039971400534D74 /* ClassInitilaizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
