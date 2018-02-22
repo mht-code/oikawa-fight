@@ -11,7 +11,7 @@ import Foundation
 
 // クラス（class）のイニシャライザ
 
-class McDonald {
+class ClassMcDonald1 {
     let title: String
     let price: Int
     
@@ -26,7 +26,7 @@ class McDonald {
     }
 }
 
-class Softtwist: McDonald {
+class ClassSofttwist2: ClassMcDonald1 {
     var urlString: String
     
     // 指定イニシャライザ
@@ -43,9 +43,9 @@ class Softtwist: McDonald {
     }
 }
 
-let Rinkai = Softtwist(title: "ソフトツイスト", price: 100, urlString: "https://map.mcdonalds.co.jp/map/13899")
+let Rinkai = ClassSofttwist2(title: "ソフトツイスト", price: 100, urlString: "https://map.mcdonalds.co.jp/map/13899")
 let url = URL(string: "https://map.mcdonalds.co.jp/map/13918")
 let title: String = "タワーツイスト"
-let Kitasuna = Softtwist(title: "ソフトツイスト", price: 100, urlString: "https://map.mcdonalds.co.jp/map/13918")
+let Kitasuna = ClassSofttwist2(title: "ソフトツイスト", price: 100, urlString: "https://map.mcdonalds.co.jp/map/13918")
 
 

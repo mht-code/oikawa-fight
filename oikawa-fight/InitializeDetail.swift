@@ -9,7 +9,7 @@
 import Foundation
 
 // イニシャライザの記法
-class User {
+class ClassUser1 {
     let name: String
     
     // funcが不要(initキーワードのみ)
@@ -27,12 +27,12 @@ class User {
 }
 
 
-let user1 = User.init(name: "oikawa")
+let user1 = ClassUser1.init(name: "oikawa")
 // 呼び出し時のメソッド名が省略可能
-let user2 = User(name: "hina")
+let user2 = ClassUser1(name: "hina")
 
 
-class Book {
+class ClassBook1 {
     let name: String
     
     init(name: String) {
@@ -41,7 +41,7 @@ class Book {
     }
 }
 
-class MyClass {
+class ClassMyClass {
     // 以下のプロパティで初期化をしなければならないプロパティはどれか
     let a: Int
     let b: Int = 0

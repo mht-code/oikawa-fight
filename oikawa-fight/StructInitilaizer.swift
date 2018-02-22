@@ -11,7 +11,7 @@ import Foundation
 // 構造体（Struct）のイニシャライザ
 // 全項目イニシャライザ｜Memberwise Initilaizer
 
-struct Product {
+struct StructProduct1 {
     let id: String
     let title: String
     var price: Int
@@ -26,9 +26,9 @@ struct Product {
      */
 }
 
-let product = Product(id: "product_id", title: "title", price: 100)
+let product = StructProduct1(id: "product_id", title: "title", price: 100)
 
-extension Product {
+extension StructProduct1 {
     init() {
         id = "oikwa"
         title = "MHT_code"
@@ -36,5 +36,5 @@ extension Product {
     }
 }
 
-let product1 = Product(id: "taichi", title: "インド", price: 1000)
-let product2 = Product()
+let product1 = StructProduct1(id: "taichi", title: "インド", price: 1000)
+let product2 = StructProduct1()

@@ -11,7 +11,7 @@ import Foundation
 // クラス、構造体、列挙体で共通のイニシャライザ
 // 失敗可能イニシャライザ｜Failable Initilizer
 // これの使い道がわからない
-class WebPage {
+class ClassWebPage1 {
     let title: String
     let url: URL
     
@@ -23,9 +23,8 @@ class WebPage {
     }
 }
 
-
 // 既定イニシャライザ｜Default Initializer
-class MyId {
+class ClassMyId2 {
     // 初期値が決まっているのでプロパティの初期化が不要
     var name: String = "oikawa"
     var number: Int = 0
@@ -34,5 +33,5 @@ class MyId {
     
 }
 
-let myId = MyId()
+let myId = ClassMyId2()
 

@@ -10,33 +10,33 @@ import Foundation
 
 // 列挙体（enum）のイニシャライザ
 //列挙体のメンバ名で初期化
-enum TrafficSignal1 {
+enum EnumSignal1 {
     case green
     case yelloq
     case red
 }
-let signal1: TrafficSignal1 = .green
+let signal1: EnumSignal1 = .green
 
 
 // 独自イニシャライザ
-enum TrafficSignal2 {
+enum EnumSignal2 {
     case green
-    case yelloq
+    case yellow
     case red
     
     init() {
         self = .red
-//        redをTrafficSignal2に代入した後にgreenを定義するとデータが上書きされてgreenのみ出力される
-//        self = .green
+//        redをEnumSignal2に代入した後にgreenを定義するとデータが上書きされてgreenのみ出力される
+        self = .green
     }
 }
 
 // .red
-let signal2 = TrafficSignal2()
+let signal2 = EnumSignal2()
 
 
 // raw valueが定義されている場合のイニシャライザ
-enum TrafficSignal3: String {
+enum EnumSignal3: String {
     case green
     case yellow
     case red
@@ -46,5 +46,6 @@ enum TrafficSignal3: String {
 }
 
 // このinitについても現場で出た
-let signal3 = TrafficSignal3(rawValue: "yellow")
+let signal3 = EnumSignal3(rawValue: "yellow")
+let signal4 = EnumSignal3(rawValue: "red")
 
