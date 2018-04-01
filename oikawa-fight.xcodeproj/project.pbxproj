@@ -17,6 +17,9 @@
 		CA687A9E20711AA300E7D5A2 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9820711AA300E7D5A2 /* RxBlocking.framework */; };
 		CA687A9F20711AA300E7D5A2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9920711AA300E7D5A2 /* RxCocoa.framework */; };
 		CA687AA120711AA300E7D5A2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9B20711AA300E7D5A2 /* RxSwift.framework */; };
+		CA687AA320711BE100E7D5A2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA687AA220711BE100E7D5A2 /* ViewModel.swift */; };
+		CA687AA620711C1100E7D5A2 /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA687AA420711C1100E7D5A2 /* RxTableViewCell.swift */; };
+		CA687AA720711C1100E7D5A2 /* RxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA687AA520711C1100E7D5A2 /* RxTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		CA687A9920711AA300E7D5A2 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		CA687A9A20711AA300E7D5A2 /* 1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; path = "Carthage/Build/iOS/1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; sourceTree = "<group>"; };
 		CA687A9B20711AA300E7D5A2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		CA687AA220711BE100E7D5A2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CA687AA420711C1100E7D5A2 /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
+		CA687AA520711C1100E7D5A2 /* RxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				CA4311A71E4DB75F0053C8FC /* Assets.xcassets */,
 				CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */,
 				CA4311AC1E4DB75F0053C8FC /* Info.plist */,
+				CA687AA220711BE100E7D5A2 /* ViewModel.swift */,
+				CA687AA420711C1100E7D5A2 /* RxTableViewCell.swift */,
+				CA687AA520711C1100E7D5A2 /* RxTableViewCell.xib */,
 			);
 			path = "oikawa-fight";
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */,
+				CA687AA720711C1100E7D5A2 /* RxTableViewCell.xib in Resources */,
 				CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */,
 				CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */,
 			);
@@ -167,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */,
+				CA687AA620711C1100E7D5A2 /* RxTableViewCell.swift in Sources */,
+				CA687AA320711BE100E7D5A2 /* ViewModel.swift in Sources */,
 				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
