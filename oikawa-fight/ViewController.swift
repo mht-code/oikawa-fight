@@ -53,6 +53,15 @@ class ViewController: UIViewController, UITableViewDelegate {
             .setDelegate(self)
             .disposed(by: disposeBag)
 
+        // flatMap Sample Code
+        let _ = single.subscribe { singleEvent in
+            print(singleEvent)
+        }
+
+        // flatMap Traning Code
+        let _ = single3.subscribe { event in
+            print(event)
+        }
     }
 
     // to prevent swipe to delete behavior
@@ -67,6 +76,78 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    enum SomeError: Error {
+        case a
+    }
+
+    // Sample Code
+    let single = Single<Int>.create { singleEvent in
+        singleEvent(.success(1))
+        return Disposables.create()
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.success(value + 1))
+                return Disposables.create()
+            }
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.error(SomeError.a))
+                return Disposables.create()
+            }
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.success(value * 2))
+                return Disposables.create()
+            }
+    }
+
+    // Traning Code
+    let single2 = Single<Int>.create { singleEvent in
+        singleEvent(.success(1))
+        return Disposables.create()
+        // 1回目
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.success(value + 1))
+                return Disposables.create()
+            }
+        // 2回目
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.error(SomeError.a))
+                return Disposables.create()
+            }
+        // 3回目
+        }.flatMap { value in
+            return Single<Int>.create { singleEvent in
+                singleEvent(.success(value * 2))
+                return Disposables.create()
+            }
+    }
+
+    let single3 = Single<Int>.create { event in
+        event(.success(1))
+        return Disposables.create()
+        // 1回目
+        }.flatMap { value in
+            return Single<Int>.create { event in
+                event(.success(value + 1))
+                return Disposables.create()
+            }
+        // 2回目
+        }.flatMap { value in
+            return Single<Int>.create { event in
+                event(.error(SomeError.a))
+                return Disposables.create()
+            }
+        // 3回目
+        }.flatMap { value in
+            return Single<Int>.create { event in
+                event(.success(value * 2))
+                return Disposables.create()
+            }
     }
 
 }
