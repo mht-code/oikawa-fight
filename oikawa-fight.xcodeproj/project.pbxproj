@@ -20,7 +20,35 @@
 		CA687AA320711BE100E7D5A2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA687AA220711BE100E7D5A2 /* ViewModel.swift */; };
 		CA687AA620711C1100E7D5A2 /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA687AA420711C1100E7D5A2 /* RxTableViewCell.swift */; };
 		CA687AA720711C1100E7D5A2 /* RxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA687AA520711C1100E7D5A2 /* RxTableViewCell.xib */; };
+		CA8B1D172072582000A10D59 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9820711AA300E7D5A2 /* RxBlocking.framework */; };
+		CA8B1D182072582000A10D59 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9820711AA300E7D5A2 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA8B1D192072582000A10D59 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9920711AA300E7D5A2 /* RxCocoa.framework */; };
+		CA8B1D1A2072582000A10D59 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9920711AA300E7D5A2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA8B1D1B2072582000A10D59 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9620711AA200E7D5A2 /* RxDataSources.framework */; };
+		CA8B1D1C2072582000A10D59 /* RxDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9620711AA200E7D5A2 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA8B1D1D2072582000A10D59 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9B20711AA300E7D5A2 /* RxSwift.framework */; };
+		CA8B1D1E2072582000A10D59 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9B20711AA300E7D5A2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA8B1D1F2072582000A10D59 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9720711AA300E7D5A2 /* RxTest.framework */; };
+		CA8B1D202072582000A10D59 /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9720711AA300E7D5A2 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA8B1D212072582100A10D59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA8B1D1E2072582000A10D59 /* RxSwift.framework in Embed Frameworks */,
+				CA8B1D1C2072582000A10D59 /* RxDataSources.framework in Embed Frameworks */,
+				CA8B1D1A2072582000A10D59 /* RxCocoa.framework in Embed Frameworks */,
+				CA8B1D202072582000A10D59 /* RxTest.framework in Embed Frameworks */,
+				CA8B1D182072582000A10D59 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,9 +76,14 @@
 			files = (
 				CA687A9C20711AA300E7D5A2 /* RxDataSources.framework in Frameworks */,
 				CA687A9D20711AA300E7D5A2 /* RxTest.framework in Frameworks */,
+				CA8B1D1D2072582000A10D59 /* RxSwift.framework in Frameworks */,
+				CA8B1D192072582000A10D59 /* RxCocoa.framework in Frameworks */,
+				CA8B1D1B2072582000A10D59 /* RxDataSources.framework in Frameworks */,
 				CA687A9E20711AA300E7D5A2 /* RxBlocking.framework in Frameworks */,
 				CA687A9F20711AA300E7D5A2 /* RxCocoa.framework in Frameworks */,
 				CA687AA120711AA300E7D5A2 /* RxSwift.framework in Frameworks */,
+				CA8B1D1F2072582000A10D59 /* RxTest.framework in Frameworks */,
+				CA8B1D172072582000A10D59 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +146,7 @@
 				CA4311991E4DB75F0053C8FC /* Sources */,
 				CA43119A1E4DB75F0053C8FC /* Frameworks */,
 				CA43119B1E4DB75F0053C8FC /* Resources */,
+				CA8B1D212072582100A10D59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
