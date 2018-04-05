@@ -24,4 +24,18 @@ class ViewModel {
         ]
         observableItems = Observable.just(sectionModels)
     }
+
+    func taxIncludedPrice(taxExcludedPrice: UInt) -> UInt {
+        return taxExcludedPrice * 108 / 100
+    }
+
+    /// 文字列の末尾がpでなければpをつける
+    func addSuffixP( name: inout String) -> Bool {
+        if name.hasSuffix("p") {
+            return false
+        }
+        name = name + "p"
+        return true
+    }
 }
+
