@@ -12,12 +12,20 @@
 		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
 		CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A71E4DB75F0053C8FC /* Assets.xcassets */; };
 		CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */; };
-		CA687A9C20711AA300E7D5A2 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9620711AA200E7D5A2 /* RxDataSources.framework */; };
-		CA687A9D20711AA300E7D5A2 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9720711AA300E7D5A2 /* RxTest.framework */; };
-		CA687A9E20711AA300E7D5A2 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9820711AA300E7D5A2 /* RxBlocking.framework */; };
-		CA687A9F20711AA300E7D5A2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9920711AA300E7D5A2 /* RxCocoa.framework */; };
-		CA687AA120711AA300E7D5A2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA687A9B20711AA300E7D5A2 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA49999220764EF50062085F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +35,6 @@
 		CA4311A71E4DB75F0053C8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4311AA1E4DB75F0053C8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4311AC1E4DB75F0053C8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA687A9620711AA200E7D5A2 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
-		CA687A9720711AA300E7D5A2 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		CA687A9820711AA300E7D5A2 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		CA687A9920711AA300E7D5A2 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		CA687A9A20711AA300E7D5A2 /* 1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; path = "Carthage/Build/iOS/1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; sourceTree = "<group>"; };
 		CA687A9B20711AA300E7D5A2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,11 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA687A9C20711AA300E7D5A2 /* RxDataSources.framework in Frameworks */,
-				CA687A9D20711AA300E7D5A2 /* RxTest.framework in Frameworks */,
-				CA687A9E20711AA300E7D5A2 /* RxBlocking.framework in Frameworks */,
-				CA687A9F20711AA300E7D5A2 /* RxCocoa.framework in Frameworks */,
-				CA687AA120711AA300E7D5A2 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,11 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CA687A9A20711AA300E7D5A2 /* 1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap */,
-				CA687A9820711AA300E7D5A2 /* RxBlocking.framework */,
-				CA687A9920711AA300E7D5A2 /* RxCocoa.framework */,
-				CA687A9620711AA200E7D5A2 /* RxDataSources.framework */,
 				CA687A9B20711AA300E7D5A2 /* RxSwift.framework */,
-				CA687A9720711AA300E7D5A2 /* RxTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +99,7 @@
 				CA4311991E4DB75F0053C8FC /* Sources */,
 				CA43119A1E4DB75F0053C8FC /* Frameworks */,
 				CA43119B1E4DB75F0053C8FC /* Resources */,
+				CA49999220764EF50062085F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
