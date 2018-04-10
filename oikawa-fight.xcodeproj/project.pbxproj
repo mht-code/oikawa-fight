@@ -12,7 +12,21 @@
 		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
 		CA4311A81E4DB75F0053C8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A71E4DB75F0053C8FC /* Assets.xcassets */; };
 		CA4311AB1E4DB75F0053C8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */; };
+		CAA2BC2B207CE790002E23BC /* oikawa_fightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2BC2A207CE790002E23BC /* oikawa_fightTests.swift */; };
+		CAA2BC33207CE7CF002E23BC /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2BC32207CE7CF002E23BC /* BusinessModel.swift */; };
+		CAA2BC35207CE87F002E23BC /* EntityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2BC34207CE87F002E23BC /* EntityData.swift */; };
+		CAA2BC37207CEA84002E23BC /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2BC36207CEA84002E23BC /* ModelMapper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAA2BC2D207CE790002E23BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA4311951E4DB75F0053C8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA43119C1E4DB75F0053C8FC;
+			remoteInfo = "oikawa-fight";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CA49999220764EF50062085F /* Embed Frameworks */ = {
@@ -37,10 +51,23 @@
 		CA4311AC1E4DB75F0053C8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA687A9A20711AA300E7D5A2 /* 1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; path = "Carthage/Build/iOS/1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap"; sourceTree = "<group>"; };
 		CA687A9B20711AA300E7D5A2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		CAA2BC28207CE790002E23BC /* oikawa-fightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "oikawa-fightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA2BC2A207CE790002E23BC /* oikawa_fightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oikawa_fightTests.swift; sourceTree = "<group>"; };
+		CAA2BC2C207CE790002E23BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA2BC32207CE7CF002E23BC /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		CAA2BC34207CE87F002E23BC /* EntityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityData.swift; sourceTree = "<group>"; };
+		CAA2BC36207CEA84002E23BC /* ModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA43119A1E4DB75F0053C8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA2BC25207CE790002E23BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CA43119F1E4DB75F0053C8FC /* oikawa-fight */,
+				CAA2BC29207CE790002E23BC /* oikawa-fightTests */,
 				CA43119E1E4DB75F0053C8FC /* Products */,
 				CA687A9520711AA200E7D5A2 /* Frameworks */,
 			);
@@ -63,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */,
+				CAA2BC28207CE790002E23BC /* oikawa-fightTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +105,9 @@
 				CA4311A71E4DB75F0053C8FC /* Assets.xcassets */,
 				CA4311A91E4DB75F0053C8FC /* LaunchScreen.storyboard */,
 				CA4311AC1E4DB75F0053C8FC /* Info.plist */,
+				CAA2BC32207CE7CF002E23BC /* BusinessModel.swift */,
+				CAA2BC34207CE87F002E23BC /* EntityData.swift */,
+				CAA2BC36207CEA84002E23BC /* ModelMapper.swift */,
 			);
 			path = "oikawa-fight";
 			sourceTree = "<group>";
@@ -87,6 +119,15 @@
 				CA687A9B20711AA300E7D5A2 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA2BC29207CE790002E23BC /* oikawa-fightTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2BC2A207CE790002E23BC /* oikawa_fightTests.swift */,
+				CAA2BC2C207CE790002E23BC /* Info.plist */,
+			);
+			path = "oikawa-fightTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,19 +151,42 @@
 			productReference = CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CAA2BC27207CE790002E23BC /* oikawa-fightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA2BC31207CE790002E23BC /* Build configuration list for PBXNativeTarget "oikawa-fightTests" */;
+			buildPhases = (
+				CAA2BC24207CE790002E23BC /* Sources */,
+				CAA2BC25207CE790002E23BC /* Frameworks */,
+				CAA2BC26207CE790002E23BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAA2BC2E207CE790002E23BC /* PBXTargetDependency */,
+			);
+			name = "oikawa-fightTests";
+			productName = "oikawa-fightTests";
+			productReference = CAA2BC28207CE790002E23BC /* oikawa-fightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CA4311951E4DB75F0053C8FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = oikawa;
 				TargetAttributes = {
 					CA43119C1E4DB75F0053C8FC = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					CAA2BC27207CE790002E23BC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA43119C1E4DB75F0053C8FC;
 					};
 				};
 			};
@@ -140,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				CA43119C1E4DB75F0053C8FC /* oikawa-fight */,
+				CAA2BC27207CE790002E23BC /* oikawa-fightTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAA2BC26207CE790002E23BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -162,12 +234,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA2BC37207CEA84002E23BC /* ModelMapper.swift in Sources */,
 				CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */,
 				CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */,
+				CAA2BC35207CE87F002E23BC /* EntityData.swift in Sources */,
+				CAA2BC33207CE7CF002E23BC /* BusinessModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA2BC24207CE790002E23BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA2BC2B207CE790002E23BC /* oikawa_fightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAA2BC2E207CE790002E23BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA43119C1E4DB75F0053C8FC /* oikawa-fight */;
+			targetProxy = CAA2BC2D207CE790002E23BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA4311A41E4DB75F0053C8FC /* Main.storyboard */ = {
@@ -312,6 +403,60 @@
 			};
 			name = Release;
 		};
+		CAA2BC2F207CE790002E23BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "oikawa-fightTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pippi.oikawa-fightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oikawa-fight.app/oikawa-fight";
+			};
+			name = Debug;
+		};
+		CAA2BC30207CE790002E23BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "oikawa-fightTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pippi.oikawa-fightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oikawa-fight.app/oikawa-fight";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +474,15 @@
 			buildConfigurations = (
 				CA4311B01E4DB75F0053C8FC /* Debug */,
 				CA4311B11E4DB75F0053C8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA2BC31207CE790002E23BC /* Build configuration list for PBXNativeTarget "oikawa-fightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA2BC2F207CE790002E23BC /* Debug */,
+				CAA2BC30207CE790002E23BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
