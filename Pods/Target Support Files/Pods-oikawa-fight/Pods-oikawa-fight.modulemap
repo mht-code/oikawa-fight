@@ -1,0 +1,6 @@
+framework module Pods_oikawa_fight {
+  umbrella header "Pods-oikawa-fight-umbrella.h"
+
+  export *
+  module * { export * }
+}
