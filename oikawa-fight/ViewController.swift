@@ -21,5 +21,12 @@ class ViewController: UIViewController {
     }
 
 
+    func sum(_ a: Int, _ b: Int) -> Int {
+        return a + b
+    }
+
+    func avg(_ a: Int, _ b: Int) -> Float {
+        return Float(a + b) / 2
+    }
 }
 

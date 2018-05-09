@@ -29,4 +29,25 @@ class oikawa_fightTests: XCTestCase {
         XCTAssertEqual(bm.message, "message")
         XCTAssertEqual(bm.count, 5)
     }
+
+    func testSum() {
+        let target = ViewController()
+        let result = target.sum(1, 2)
+
+        XCTAssertEqual(result, 3)
+    }
+
+    func testNotSum() {
+        let target = ViewController()
+        let result = target.sum(1, 2)
+
+        XCTAssertNotEqual(result, 10)
+    }
+
+    func testAvg() {
+        let target = ViewController()
+        let result = target.avg(1, 2)
+
+        XCTAssertEqual(result, 1.5)
+    }
 }
