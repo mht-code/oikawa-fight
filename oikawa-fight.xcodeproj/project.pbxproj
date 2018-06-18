@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E1985FB496C2324044C11A /* Pods_oikawa_fight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3813B76A61D1E03E4A96C4 /* Pods_oikawa_fight.framework */; };
 		CA4311A11E4DB75F0053C8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */; };
 		CA4311A31E4DB75F0053C8FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4311A21E4DB75F0053C8FC /* ViewController.swift */; };
 		CA4311A61E4DB75F0053C8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4311A41E4DB75F0053C8FC /* Main.storyboard */; };
@@ -28,6 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		48B9A94346B49F0F1199F6FF /* Pods-oikawa-fight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oikawa-fight.release.xcconfig"; path = "Pods/Target Support Files/Pods-oikawa-fight/Pods-oikawa-fight.release.xcconfig"; sourceTree = "<group>"; };
+		AB3813B76A61D1E03E4A96C4 /* Pods_oikawa_fight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oikawa_fight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0519E6CE307E787C927B70B /* Pods-oikawa-fight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oikawa-fight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oikawa-fight/Pods-oikawa-fight.debug.xcconfig"; sourceTree = "<group>"; };
 		CA43119D1E4DB75F0053C8FC /* oikawa-fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oikawa-fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4311A01E4DB75F0053C8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA4311A21E4DB75F0053C8FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E1985FB496C2324044C11A /* Pods_oikawa_fight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 				CA43119F1E4DB75F0053C8FC /* oikawa-fight */,
 				CA43119E1E4DB75F0053C8FC /* Products */,
 				CA687A9520711AA200E7D5A2 /* Frameworks */,
+				E6FBC80608BF31C274F9396F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +91,18 @@
 			children = (
 				CA687A9A20711AA300E7D5A2 /* 1ADCEB1C-16F7-32D4-AD6B-CE60A2232BF4.bcsymbolmap */,
 				CA687A9B20711AA300E7D5A2 /* RxSwift.framework */,
+				AB3813B76A61D1E03E4A96C4 /* Pods_oikawa_fight.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6FBC80608BF31C274F9396F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0519E6CE307E787C927B70B /* Pods-oikawa-fight.debug.xcconfig */,
+				48B9A94346B49F0F1199F6FF /* Pods-oikawa-fight.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,10 +112,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA4311AF1E4DB75F0053C8FC /* Build configuration list for PBXNativeTarget "oikawa-fight" */;
 			buildPhases = (
+				52C60EC5556C9C5A6C822715 /* [CP] Check Pods Manifest.lock */,
 				CA4311991E4DB75F0053C8FC /* Sources */,
 				CA43119A1E4DB75F0053C8FC /* Frameworks */,
 				CA43119B1E4DB75F0053C8FC /* Resources */,
 				CA49999220764EF50062085F /* Embed Frameworks */,
+				57178BB9B3E069F43B2CB9F8 /* [CP] Embed Pods Frameworks */,
+				11CEFB0A5BB77713DA313824 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +175,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11CEFB0A5BB77713DA313824 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oikawa-fight/Pods-oikawa-fight-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oikawa-fight/Pods-oikawa-fight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C60EC5556C9C5A6C822715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oikawa-fight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57178BB9B3E069F43B2CB9F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oikawa-fight/Pods-oikawa-fight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA4311991E4DB75F0053C8FC /* Sources */ = {
@@ -282,6 +357,7 @@
 		};
 		CA4311B01E4DB75F0053C8FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0519E6CE307E787C927B70B /* Pods-oikawa-fight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -298,6 +374,7 @@
 		};
 		CA4311B11E4DB75F0053C8FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B9A94346B49F0F1199F6FF /* Pods-oikawa-fight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
