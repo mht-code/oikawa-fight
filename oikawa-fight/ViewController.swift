@@ -12,11 +12,17 @@ import GoogleMaps
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var mapView: UIView!
-    
+    let button: UIButton = UIButton(type: UIButtonType.system)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        button.addTarget(self, action: #selector(buttonTapAction), for: UIControlEvents.touchUpInside)
+        button.setTitle("(^-^)", for: UIControlState.normal)
+        button.sizeToFit()
+        button.center = self.view.center
+        self.view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,5 +42,8 @@ class ViewController: UIViewController {
         marker.map = map
     }
 
+    @objc func buttonTapAction() {
+        print("ボタンがタップされました！！！！！！！！！！！！！！！！！！！！！！！！")
+    }
 }
 
