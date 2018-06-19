@@ -18,11 +18,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        button.addTarget(self, action: #selector(buttonTapAction), for: UIControlEvents.touchUpInside)
-        button.setTitle("(^-^)", for: UIControlState.normal)
-        button.sizeToFit()
-        button.center = self.view.center
-        self.view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,18 +27,31 @@ class ViewController: UIViewController {
 
     override func loadView() {
         let camera = GMSCameraPosition.camera(withLatitude: 35.710331, longitude: 139.776826, zoom: 18.0)
-        let map = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        map.isMyLocationEnabled = true
-        view = map
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
+        view = mapView
 
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: 35.710331, longitude: 139.776826)
         marker.title = "いいオフィス"
-        marker.map = map
+        marker.map = mapView
+
+        let button = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 100))
+
+        button.setTitle("Button", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
+        self.view.addSubview(button)
+
+        mapView.settings.compassButton = true
+        mapView.settings.myLocationButton = true
+        mapView.settings.indoorPicker = true
+
     }
 
-    @objc func buttonTapAction() {
-        print("ボタンがタップされました！！！！！！！！！！！！！！！！！！！！！！！！")
+    @objc func handleTap(_ sender: UIButton) {
+        print("You tapped a button")
     }
+
 }
 
