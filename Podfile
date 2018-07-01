@@ -6,5 +6,7 @@ target 'oikawa-fight' do
   use_frameworks!
 
   # Pods for oikawa-fight
+  pod 'AWSS3'
+  pod 'AWSCognito'
 
 end
