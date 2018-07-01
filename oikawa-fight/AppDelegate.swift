@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        // AWSServiceManagerへの初期設定を行う
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .APNortheast1,
                                                                 identityPoolId: "Identity Pool Id")
         let configuration = AWSServiceConfiguration(region: .APNortheast1, credentialsProvider: credentialsProvider)
